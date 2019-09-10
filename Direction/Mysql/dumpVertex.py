@@ -19,7 +19,7 @@ def MYSQL_DUMP_DIST():
     # dump dist excel to mysql
     floorNumber = 9
     for i in range(0, floorNumber):
-        fileName = "C:\\Users\\w\\Documents\\GitHub\\WayFinder\\Direction\\Route\\dist\\sf" + str(i + 1) + "f_vertex.xlsx"
+        fileName = "C:\\Users\\w\\Documents\\GitHub\\WayFinder\\Direction\\Route\\vertex\\sf" + str(i + 1) + "f_vertex.xlsx"
         tableName = "sf" + str(i + 1) + "f_vertex"
         df = read_excel(fileName)
         df.to_sql(name = tableName, if_exists="replace", con = engine, index = False)
