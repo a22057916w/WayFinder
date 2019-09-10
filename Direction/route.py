@@ -55,12 +55,13 @@ def getRoute(collection, targetCollection):
     tn = len(targetDist[0])
     n = max(sn, tn)
     route = [[1E9 for i in range(n)] for j in range(n)]
+    EID = [[None for i in range(n)] for j in range(n)]      # record which elevator it takes
     for i in range(0, sn):
         for j in range(0, tn):
-            route[i][j] = getDistance(collection, targetCollection, i, j)
-    return route
+            route[i][j], EID[i][j] = getDistanceAndElevator(collection, targetCollection, i, j)
+    return route, EID
 
-def getDistance(collection, targetCollection, s, e):
+def getDistanceAndElevator(collection, targetCollection, s, e):
     # assigning the variables
     dist = collection["dist"]
     elevators = collection["elevators"]
@@ -90,17 +91,26 @@ def getDistance(collection, targetCollection, s, e):
     spe = 1E9     # starting point to elevator
     tpe = 1E9     # target point to elevator
     totDist = 1E9
+    EID = None    # record the elevator's id
     for elevator in elevators:
         VID = elevator.getVertexID()[0]
         spe = dist[s][EVID[VID]]
+        EID = elevator.getID()
+        # find the same elevator on different floor
         for targetElevator in targetElevators:
-            TVID = targetElevator.getVertexID()[0]
-            tpe = targetDist[e][TEVID[TVID]]
-            totDist = min(totDist, spe + tpe)
+            if targetElevator.getName() == elevator.getName():
+                TVID = targetElevator.getVertexID()[0]
+                tpe = targetDist[e][TEVID[TVID]]
+                if totDist < spe + tpe:
+                    totDist = spe + tpe
+                    EID = targetElevator.getID()
+                break
+            else:
+                continue
 
-    return totDist
+    return totDist, EID
 
-def parseSave(totDist, floorVertex, floorNext):
+def parseSave(totDist, totElev, floorVertex, floorNext):
     floorNumber = len(totDist)  # len(totDist) gets floor counts
 
     # parse and save each floor as a file for dist and next
@@ -115,7 +125,8 @@ def parseSave(totDist, floorVertex, floorNext):
                         "floor": str(j),
                         "start": str(k),
                         "dest": str(l),
-                        "dist": totDist[i][j][k][l]
+                        "dist": totDist[i][j][k][l],
+                        "Elevator": totElev[i][j][k][l]
                     })
         save(dist, fileDist)    # saving using myio function
 
@@ -205,13 +216,24 @@ if __name__ == "__main__":
 
     # calculating the route for all floor
     totalRoute = []     # a four dim list [startFloor][targetFloor][startPoint][endPoint]
+    totalElevator = []  # a four dim list to record the elevator between two points
     for i in range(0, floorNumber):
-        route = []
+        routes = []
+        EIDS = []
         for j in range(0, floorNumber):
             if i == j:
-                route.append(floorDist[i])
-                continue
-            route.append(getRoute(floorCollection[i], floorCollection[j]))
-        totalRoute.append(route)
+                routes.append(floorDist[i])
 
-    parseSave(totalRoute, floorVertex, floorNext)
+                # n for numbers of vertex of each floor
+                n = len(floorVertex[i])
+                EIDS.append([[None for i in range(n)] for j in range(n)])
+                continue
+
+            route, EID = getRoute(floorCollection[i], floorCollection[j])
+            routes.append(route)
+            EIDS.append(EID)
+
+        totalRoute.append(routes)
+        totalElevator.append(EIDS)
+
+    parseSave(totalRoute, totalElevator, floorVertex, floorNext)
