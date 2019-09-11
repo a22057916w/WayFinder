@@ -33,17 +33,23 @@ def Floyd_Warshall(weight):
                     # 由i點到j點的路徑的第二點，
                     # 正是由i點到k點的路徑的第二點。
                     next[i][j] = next[i][k];
-    #print(d)
-    return d, next
+
+    totNext = [[None for i in range(n)] for j in range(n)]
+    for i in range(0, n):
+        for j in range(0, n):
+            totNext[i][j] = find_path(i, j, next)
+
+    return d, next, totNext
 
 
 # 印出由s點到t點的最短路徑
 def find_path(s, t, next):
+    middle = []
     i = s
     while i != t:
         i = next[i][t]
-        print(i)
-    print(t)
+        middle.append(i)
+    return middle
 
 
 def getRoute(collection, targetCollection):
@@ -198,10 +204,12 @@ if __name__ == "__main__":
     totalWeight = getWeight(floorVertex)       # return a list of weight (index represent floor)
     floorDist = []
     floorNext = []
+    totalNext = []
     for i in range(0, len(totalWeight)):
-        d, n = Floyd_Warshall(totalWeight[i])       # return two list of two dim
+        d, n , tn = Floyd_Warshall(totalWeight[i])       # return two list of two dim
         floorDist.append(d)
         floorNext.append(n)
+        totalNext.append(tn)
 
     # store all the data of each floor
     floorCollection = []
@@ -214,7 +222,7 @@ if __name__ == "__main__":
             "next": floorNext[i]
         })
 
-    # calculating the route for all floor
+    # calculating the route and other information for all floor
     totalRoute = []     # a four dim list [startFloor][targetFloor][startPoint][endPoint]
     totalElevator = []  # a four dim list to record the elevator between two points
     for i in range(0, floorNumber):
@@ -236,4 +244,4 @@ if __name__ == "__main__":
         totalRoute.append(routes)
         totalElevator.append(EIDS)
 
-    parseSave(totalRoute, totalElevator, floorVertex, floorNext)
+    parseSave(totalRoute, totalElevator, floorVertex, totalNext)
