@@ -113,6 +113,8 @@ class Vertex():
         self.onInct = False             # Type of Boolean
         self.inct = None                # Type of String
 
+        self.rotation = None            # Type of String
+
         self.coordinates = None         # Type of list of String
         self.lat = 0                    # Type of Double
         self.lng = 0                    # Type of Double
@@ -133,6 +135,7 @@ class Vertex():
         self.lat = float(self.coordinates[1])
 
         # Setting properties keys
+        self.rotation = self.properties["rotation"]
         self.type = self.properties["type"]
         self.id = self.properties["id"]
 
@@ -147,6 +150,8 @@ class Vertex():
         return self.type
     def getID(self):
         return self.id
+    def getRotation(self):
+        return self.rotation
     def getCoordinate(self):
         return self.coordinates
     def getLat(self):

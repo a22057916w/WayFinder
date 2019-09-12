@@ -10,7 +10,7 @@ sys.path.append("C:/Users/w/Documents/GitHub/WayFinder/Direction/Library/script/
 from featureCollection import Feature, Vertex
 from myio import read_excel
 
-def MYSQL_DUMP_DIST():
+def MYSQL_DUMP_VERTEX():
 
     # ====== Connection ====== #
     # Connecting to mysql by providing a sqlachemy engine
@@ -24,4 +24,4 @@ def MYSQL_DUMP_DIST():
         df = read_excel(fileName)
         df.to_sql(name = tableName, if_exists="replace", con = engine, index = False)
 
-MYSQL_DUMP_DIST()
+MYSQL_DUMP_VERTEX()

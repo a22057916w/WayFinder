@@ -159,7 +159,8 @@ def parseSave(totDist, totElev, floorVertex, floorNext):
                 "ID": vertex.getID(),
                 "index": vertex.getIndex(),
                 "inct": vertex.getInct(),
-                "coordinate": vertex.getCoordinate()
+                "coordinate": vertex.getCoordinate(),
+                "rotation": vertex.getRotation()
             })
         save(vertexes, fileName)
 
