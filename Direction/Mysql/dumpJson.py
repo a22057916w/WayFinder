@@ -57,5 +57,6 @@ def MYSQL_DUMP_JSON():
             mycursor.execute(sql, val)
 
     mydb.commit()
+    mydb.close()
 
 MYSQL_DUMP_JSON()
