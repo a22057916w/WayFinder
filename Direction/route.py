@@ -116,7 +116,7 @@ def getDistanceAndElevator(collection, targetCollection, s, e):
 
     return totDist, EID
 
-def parseSave(totDist, totElev, floorVertex, floorNext):
+def parseSave(totDist, totElev, floorVertex, floorNext, floorRouteCoord):
     floorNumber = len(totDist)  # len(totDist) gets floor counts
 
     # parse and save each floor as a file for dist and next
@@ -136,18 +136,19 @@ def parseSave(totDist, totElev, floorVertex, floorNext):
                     })
         save(dist, fileDist)    # saving using myio function
 
-        # parsing the next(middle points) data and save
-        for i in range(0, floorNumber):
-            fileNext = "C:/Users/w/Documents/GitHub/WayFinder/Direction/Route/next/sf" + str(i + 1) + "f_next"
-            middle = []     # for saving middle points between the route only on floor[i]
-            for j in range(0, len(floorNext[i])):
-                for k in range(0, len(floorNext[i][j])):
-                    middle.append({
-                        "start": str(j),
-                        "dest": str(k),
-                        "next": floorNext[i][j][k]
-                    })
-            save(middle, fileNext)  # saving using myio function
+    # parsing the next(middle points) data and save
+    for i in range(0, floorNumber):
+        fileNext = "C:/Users/w/Documents/GitHub/WayFinder/Direction/Route/next/sf" + str(i + 1) + "f_next"
+        middle = []     # for saving middle points between the route only on floor[i]
+        for j in range(0, len(floorNext[i])):
+            for k in range(0, len(floorNext[i][j])):
+                middle.append({
+                    "start": str(j),
+                    "dest": str(k),
+                    "next": floorNext[i][j][k],
+                    "coordinate": floorRouteCoord[i][j][k]
+                })
+        save(middle, fileNext)  # saving using myio function
 
 
     #store each floor's vertexes
@@ -245,4 +246,17 @@ if __name__ == "__main__":
         totalRoute.append(routes)
         totalElevator.append(EIDS)
 
-    parseSave(totalRoute, totalElevator, floorVertex, totalNext)
+    totalRouteCoord = []
+    for i in range(0, floorNumber):
+        floorRouteCoord = []
+        for j in range(0, len(totalNext[i])):
+            routeCoord = []
+            for k in range(0, len(totalNext[i][j])):
+                coords = []
+                for vertex_index in totalNext[i][j][k]:
+                    coords.append(floorVertex[i][vertex_index].getCoordinate())
+                routeCoord.append(coords)
+            floorRouteCoord.append(routeCoord)
+        totalRouteCoord.append(floorRouteCoord)
+
+    parseSave(totalRoute, totalElevator, floorVertex, totalNext, totalRouteCoord)

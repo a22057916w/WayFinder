@@ -14,7 +14,7 @@ def MYSQL_DUMP_VERTEX():
 
     # ====== Connection ====== #
     # Connecting to mysql by providing a sqlachemy engine
-    engine = create_engine('mysql+mysqlconnector://root:@140.136.150.100:3306/WayFinder', echo=False)
+    engine = MY_ENGINE()
 
     # dump dist excel to mysql
     floorNumber = 9

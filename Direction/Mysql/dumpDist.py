@@ -9,12 +9,13 @@ import sys
 sys.path.append("C:/Users/w/Documents/GitHub/WayFinder/Direction/Library/script/")
 from featureCollection import Feature, Vertex
 from myio import read_excel
+from mysqlCoom import MY_ENGINE
 
 def MYSQL_DUMP_DIST():
 
     # ====== Connection ====== #
     # Connecting to mysql by providing a sqlachemy engine
-    engine = create_engine('mysql+mysqlconnector://root:@140.136.150.100:3306/WayFinder', echo=False)
+    engine = MY_ENGINE()
 
     # dump dist excel to mysql
     floorNumber = 9
