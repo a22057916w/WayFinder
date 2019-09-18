@@ -9,6 +9,7 @@ import sys
 sys.path.append("C:/Users/w/Documents/GitHub/WayFinder/Direction/Library/script/")
 from featureCollection import Feature, Vertex
 from myio import read_excel
+from mysqlCoom import MY_ENGINE
 
 def MYSQL_DUMP_NEXT():
 
