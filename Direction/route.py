@@ -107,7 +107,7 @@ def getDistanceAndElevator(collection, targetCollection, s, e):
             if targetElevator.getName() == elevator.getName():
                 TVID = targetElevator.getVertexID()[0]
                 tpe = targetDist[e][TEVID[TVID]]
-                if totDist < spe + tpe:
+                if totDist > spe + tpe:
                     totDist = spe + tpe
                     EID = targetElevator.getID()
                 break
