@@ -116,7 +116,7 @@ def getDistanceAndElevator(collection, targetCollection, s, e):
 
     return totDist, EID
 
-def parseSave(totDist, totElev, floorVertex, floorNext, floorRouteCoord):
+def parseSave(totDist, totElev, floorVertex, floorNext, floorRouteCoord, floorRouteRot):
     floorNumber = len(totDist)  # len(totDist) gets floor counts
 
     # parse and save each floor as a file for dist and next
@@ -146,7 +146,8 @@ def parseSave(totDist, totElev, floorVertex, floorNext, floorRouteCoord):
                     "start": str(j),
                     "dest": str(k),
                     "next": floorNext[i][j][k],
-                    "coordinate": floorRouteCoord[i][j][k]
+                    "coordinate": floorRouteCoord[i][j][k],
+                    "rotation": floorRouteRot[i][j][k]
                 })
         save(middle, fileNext)  # saving using myio function
 
@@ -246,6 +247,7 @@ if __name__ == "__main__":
         totalRoute.append(routes)
         totalElevator.append(EIDS)
 
+    # change a list of index number into  a list of coordinate
     totalRouteCoord = []
     for i in range(0, floorNumber):
         floorRouteCoord = []
@@ -259,4 +261,17 @@ if __name__ == "__main__":
             floorRouteCoord.append(routeCoord)
         totalRouteCoord.append(floorRouteCoord)
 
-    parseSave(totalRoute, totalElevator, floorVertex, totalNext, totalRouteCoord)
+    totalRouteRot = []
+    for i in range(0, floorNumber):
+        floorRouteRot = []
+        for j in range(0, len(totalNext[i])):
+            routeRot = []
+            for k in range(0, len(totalNext[i][j])):
+                rotation = []
+                for vertex_index in totalNext[i][j][k]:
+                    rotation.append(floorVertex[i][vertex_index].getRotation())
+                routeRot.append(rotation)
+            floorRouteRot.append(routeRot)
+        totalRouteRot.append(floorRouteRot)
+
+    parseSave(totalRoute, totalElevator, floorVertex, totalNext, totalRouteCoord, totalRouteRot)
