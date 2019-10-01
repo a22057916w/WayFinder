@@ -159,7 +159,7 @@ def parseSave(totDist, totElev, floorVertex, floorNext, floorRouteCoord, floorRo
         for vertex in floorVertex[i]:
             vertexes.append({
                 "ID": vertex.getID(),
-                "index": vertex.getIndex(),
+                "_index_": vertex.getIndex(),
                 "inct": vertex.getInct(),
                 "coordinate": vertex.getCoordinate(),
                 "rotation": vertex.getRotation()
