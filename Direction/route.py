@@ -3,7 +3,7 @@ import json
 from math import sin, cos, sqrt, atan2, radians
 import sys
 # Adding the path of self-def Library
-sys.path.append("C:/Users/w/Documents/GitHub/WayFinder/Direction/Library/script/")
+sys.path.append("C:/Users/A02wxy/Documents/GitHub/WayFinder/Direction/Library/script/")
 from featureCollection import Feature, Vertex
 from readGeojson import readAllGeojson
 from weight import getWeight
@@ -121,7 +121,7 @@ def parseSave(totDist, totElev, floorVertex, floorNext, floorRouteCoord, floorRo
 
     # parse and save each floor as a file for dist and next
     for i in range(0, floorNumber):
-        fileDist = "C:/Users/w/Documents/GitHub/WayFinder/Direction/Route/dist/sf" + str(i + 1) + "f_dist"
+        fileDist = "C:/Users/A02wxy/Documents/GitHub/WayFinder/Direction/Route/dist/sf" + str(i + 1) + "f_dist"
         dist = []       # for saving dist to each floor from floor[i]
         # parsing the dist data
         for j in range(0, floorNumber):
@@ -138,7 +138,7 @@ def parseSave(totDist, totElev, floorVertex, floorNext, floorRouteCoord, floorRo
 
     # parsing the next(middle points) data and save
     for i in range(0, floorNumber):
-        fileNext = "C:/Users/w/Documents/GitHub/WayFinder/Direction/Route/next/sf" + str(i + 1) + "f_next"
+        fileNext = "C:/Users/A02wxy/Documents/GitHub/WayFinder/Direction/Route/next/sf" + str(i + 1) + "f_next"
         middle = []     # for saving middle points between the route only on floor[i]
         for j in range(0, len(floorNext[i])):
             for k in range(0, len(floorNext[i][j])):
@@ -154,7 +154,7 @@ def parseSave(totDist, totElev, floorVertex, floorNext, floorRouteCoord, floorRo
 
     #store each floor's vertexes
     for i in range(0, floorNumber):
-        fileName = "C:/Users/w/Documents/GitHub/WayFinder/Direction/Route/vertex/sf" + str(i + 1) + "f_vertex"
+        fileName = "C:/Users/A02wxy/Documents/GitHub/WayFinder/Direction/Route/vertex/sf" + str(i + 1) + "f_vertex"
         vertexes = []
         for vertex in floorVertex[i]:
             vertexes.append({
