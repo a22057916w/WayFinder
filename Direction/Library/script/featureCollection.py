@@ -174,6 +174,7 @@ class Poster():
         self.properties = {}
         self.type = None
         self.id = None                        # Type of String
+        self.vertex_id = None
 
 
         self.coordinates = None         # Type of list of String
@@ -197,6 +198,7 @@ class Poster():
         # Setting properties keys
         self.type = self.properties["type"]
         self.id = self.properties["id"]
+        self.vertex_id = self.properties["vertex_id"]
 
 
     def getType(self):
@@ -211,3 +213,5 @@ class Poster():
         return self.lng
     def getFeature(self):
         return self.feature
+    def getVertex(self):
+        return self.vertex
