@@ -11,7 +11,7 @@ from featureCollection import Feature, Vertex
 from myio import read_excel
 from mysqlCoon import MY_ENGINE
 
-def MYSQL_DUMP_NEXT():
+def MYSQL_DUMP_POSTER():
 
     # ====== Connection ====== #
     # Connecting to mysql by providing a sqlachemy engine
@@ -25,4 +25,4 @@ def MYSQL_DUMP_NEXT():
         df = read_excel(fileName)
         df.to_sql(name = tableName, if_exists="replace", con = engine, index = False)
 
-MYSQL_DUMP_NEXT()
+MYSQL_DUMP_POSTER()
