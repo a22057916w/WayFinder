@@ -166,6 +166,17 @@ def parseSave(totDist, totElev, floorVertex, floorNext, floorRouteCoord, floorRo
             })
         save(vertexes, fileName)
 
+    # store each floor's poster
+    for i in range(0, floorNumber):
+        fileName = "C:/Users/w/Documents/GitHub/WayFinder/Direction/Route/poster/sf" + str(i + 1) + "f_poster"
+        posters = []
+        for psoter in floorPoster[i]:
+            poster.append({
+                "ID": poster.getID(),
+                "coordinate": poster.getCoordinate(),
+            })
+        save(posters, fileName)
+
 if __name__ == "__main__":
     geoSource = readAllGeojson()
     floorNumber = len(geoSource)
@@ -202,6 +213,14 @@ if __name__ == "__main__":
                 elevator.append(Feature(feature.getFeature()))
         floorElevators.append(elevator)
 
+    # initializing each floor's poster
+    floorPoster = []
+    for i in range(0, floorNumber):
+        poster = []
+        for feature in floorFeatures[i]:
+            if feature.getType() == "poster"
+                poster.append(Feature(feature.getFeature()))
+        floorPoster.append(poster)
 
     # calculating each floor's route
     totalWeight = getWeight(floorVertex)       # return a list of weight (index represent floor)
