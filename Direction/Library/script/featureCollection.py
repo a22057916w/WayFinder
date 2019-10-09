@@ -165,3 +165,53 @@ class Vertex():
             return self.inct
     def isInct(self):
         return self.onInct
+
+
+class Poster():
+    def __init__(self, feature):
+        # Data initializing
+        self.geometry = {}
+        self.properties = {}
+        self.type = None
+        self.id = None                        # Type of String
+        self.vertex_id = None
+
+
+        self.coordinates = None         # Type of list of String
+        self.lat = 0                    # Type of Double
+        self.lng = 0                    # Type of Double
+
+        self.feature = None
+
+        # Data assigning
+        self.feature = feature
+        self.geometry = feature["geometry"]
+        self.properties = feature["properties"]
+        self.setData()
+
+    def setData(self):
+        # Setting geometry keys
+        self.coordinates = self.geometry["coordinates"]
+        self.lng = float(self.coordinates[0])
+        self.lat = float(self.coordinates[1])
+
+        # Setting properties keys
+        self.type = self.properties["type"]
+        self.id = self.properties["id"]
+        self.vertex_id = self.properties["vertex_id"]
+
+
+    def getType(self):
+        return self.type
+    def getID(self):
+        return self.id
+    def getCoordinate(self):
+        return self.coordinates
+    def getLat(self):
+        return self.lat
+    def getLng(self):
+        return self.lng
+    def getFeature(self):
+        return self.feature
+    def getVertexID(self):
+        return self.vertex_id
