@@ -220,7 +220,7 @@ if __name__ == "__main__":
         poster = []
         for feature in floorFeatures[i]:
             if feature.getType() == "poster":
-                poster.append(Feature(feature.getFeature()))
+                poster.append(poster(feature.getFeature()))
         floorPoster.append(poster)
 
     # calculating each floor's route
