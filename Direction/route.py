@@ -4,7 +4,7 @@ from math import sin, cos, sqrt, atan2, radians
 import sys
 # Adding the path of self-def Library
 sys.path.append("C:/Users/A02wxy/Documents/GitHub/WayFinder/Direction/Library/script/")
-from featureCollection import Feature, Vertex
+from featureCollection import Feature, Vertex, Poster
 from readGeojson import readAllGeojson
 from weight import getWeight
 from myio import save
