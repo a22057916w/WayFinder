@@ -218,7 +218,7 @@ if __name__ == "__main__":
     for i in range(0, floorNumber):
         poster = []
         for feature in floorFeatures[i]:
-            if feature.getType() == "poster"
+            if feature.getType() == "poster":
                 poster.append(Feature(feature.getFeature()))
         floorPoster.append(poster)
 
