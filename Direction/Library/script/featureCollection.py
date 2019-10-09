@@ -213,5 +213,5 @@ class Poster():
         return self.lng
     def getFeature(self):
         return self.feature
-    def getVertex(self):
-        return self.vertex
+    def getVertexID(self):
+        return self.vertex_id
