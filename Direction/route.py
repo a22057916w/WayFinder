@@ -168,7 +168,7 @@ def parseSave(totDist, totElev, floorVertex, floorNext, floorRouteCoord, floorRo
 
     # store each floor's poster
     for i in range(0, floorNumber):
-        fileName = "C:/Users/w/Documents/GitHub/WayFinder/Direction/Route/poster/sf" + str(i + 1) + "f_poster"
+        fileName = "C:/Users/A02wxy/Documents/GitHub/WayFinder/Direction/Route/poster/sf" + str(i + 1) + "f_poster"
         posters = []
         for poster in floorPoster[i]:
             posters.append({
