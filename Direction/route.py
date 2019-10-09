@@ -4,7 +4,7 @@ from math import sin, cos, sqrt, atan2, radians
 import sys
 # Adding the path of self-def Library
 sys.path.append("C:/Users/w/Documents/GitHub/WayFinder/Direction/Library/script/")
-from featureCollection import Feature, Vertex
+from featureCollection import Feature, Vertex, Poster
 from readGeojson import readAllGeojson
 from weight import getWeight
 from myio import save
@@ -220,7 +220,7 @@ if __name__ == "__main__":
         poster = []
         for feature in floorFeatures[i]:
             if feature.getType() == "poster":
-                poster.append(poster(feature.getFeature()))
+                poster.append(Poster(feature.getFeature()))
         floorPoster.append(poster)
 
     # calculating each floor's route
