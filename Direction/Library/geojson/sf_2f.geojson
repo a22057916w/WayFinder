@@ -1703,7 +1703,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point", "id":"a16", "rotation":"0,1", "index":"15}
+        "properties": {"type":"point", "id":"a16", "rotation":"0,1", "index":"15"}
       },
       {
         "geometry": {
