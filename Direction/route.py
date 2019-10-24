@@ -119,7 +119,7 @@ def getDistanceAndElevator(collection, targetCollection, s, e):
 def parseSave(totDist, totElev, floorVertex, floorNext, floorRouteCoord, floorRouteRot):
     floorNumber = len(totDist)  # len(totDist) gets floor counts
 
-    """# parse and save each floor as a file for dist and next
+    # parse and save each floor as a file for dist and next
     for i in range(0, floorNumber):
         fileDist = "C:/Users/w/Documents/GitHub/WayFinder/Direction/Route/dist/sf" + str(i + 1) + "f_dist"
         dist = []       # for saving dist to each floor from floor[i]
@@ -164,7 +164,7 @@ def parseSave(totDist, totElev, floorVertex, floorNext, floorRouteCoord, floorRo
                 "coordinate": vertex.getCoordinate(),
                 "rotation": vertex.getRotation()
             })
-        save(vertexes, fileName)"""
+        save(vertexes, fileName)
 
     # store each floor's poster
     for i in range(0, floorNumber):
