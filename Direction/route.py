@@ -4,7 +4,7 @@ from math import sin, cos, sqrt, atan2, radians
 import sys
 # Adding the path of self-def Library
 sys.path.append("C:/Users/A02wxy/Documents/GitHub/WayFinder/Direction/Library/script/")
-from featureCollection import Feature, Vertex
+from featureCollection import Feature, Vertex, Poster
 from readGeojson import readAllGeojson
 from weight import getWeight
 from myio import save
@@ -166,6 +166,19 @@ def parseSave(totDist, totElev, floorVertex, floorNext, floorRouteCoord, floorRo
             })
         save(vertexes, fileName)
 
+    # store each floor's poster
+    for i in range(0, floorNumber):
+        fileName = "C:/Users/A02wxy/Documents/GitHub/WayFinder/Direction/Route/poster/sf" + str(i + 1) + "f_poster"
+        posters = []
+        for poster in floorPoster[i]:
+            posters.append({
+                "ID": poster.getID(),
+                "coordinate": poster.getCoordinate(),
+                "vertex_id": poster.getVertexID(),
+                "rotation" poster.getRotation()
+            })
+        save(posters, fileName)
+
 if __name__ == "__main__":
     geoSource = readAllGeojson()
     floorNumber = len(geoSource)
@@ -202,6 +215,14 @@ if __name__ == "__main__":
                 elevator.append(Feature(feature.getFeature()))
         floorElevators.append(elevator)
 
+    # initializing each floor's poster
+    floorPoster = []
+    for i in range(0, floorNumber):
+        poster = []
+        for feature in floorFeatures[i]:
+            if feature.getType() == "poster":
+                poster.append(Poster(feature.getFeature()))
+        floorPoster.append(poster)
 
     # calculating each floor's route
     totalWeight = getWeight(floorVertex)       # return a list of weight (index represent floor)

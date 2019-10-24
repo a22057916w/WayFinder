@@ -528,6 +528,23 @@
       "properties": {"type":"elevator","id":"1","name":"電梯A","multi_door": "0","door": "121.43157399204779,25.035220829126274","vertex":"121.43160910565581,25.035205720706145","vertex_id":"C30"}
       }
       ,
+	  {
+      "_comment":"海報A",
+      "geometry": {
+        "coordinates": [
+          121.43157399204779,
+		  25.035220829126274
+        ],
+        "type": "Point"
+      },
+      "type": "Feature",
+      "properties": {"type":"poster","id":"1","name":"海報A",
+						"multi_door": "0",
+						"door": "121.43157399204779,25.035220829126274",
+						"vertex":"121.43160910565581,25.035205720706145",
+						"vertex_id":"C30",
+						"floor":"9"}
+      },
       {
       "_comment":"男廁",
       "geometry": {
@@ -625,6 +642,24 @@
       },
       "type": "Feature",
       "properties": {"type":"elevator","id":"2","name":"電梯B","multi_door": "0","door": "121.43163530426546,25.035555656976058","vertex":"121.4316471063114,25.03557707439863","vertex_id":"A4"}
+      }
+      ,
+	  {
+      "_comment":"海報B",
+      "geometry": {
+        "coordinates": [
+          121.43163530426546,
+		  25.035555656976058
+        ],
+        "type": "Point"
+      },
+      "type": "Feature",
+      "properties": {"type":"poster","id":"2","name":"海報B",
+						"multi_door": "0",
+						"door": "121.43163530426546,25.035555656976058",
+						"vertex":"121.4316471063114,25.03557707439863",
+						"vertex_id":"A4",
+						"floor":"9"}
       }
       ,
       {
@@ -1139,7 +1174,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"A1","rotation":"0,1"}
+        "properties": {"type":"point","id":"A1","rotation":"0,1","index":"1"}
       },
       {
         "geometry": {
@@ -1150,7 +1185,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"A2","rotation":"0,1"}
+        "properties": {"type":"point","id":"A2","rotation":"0,1","index":"2"}
       },
       {
         "geometry": {
@@ -1161,7 +1196,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"A3","rotation":"0,1"}
+        "properties": {"type":"point","id":"A3","rotation":"0,1","index":"3"}
       },
       {
         "geometry": {
@@ -1172,7 +1207,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"A4","rotation":"0,1"}
+        "properties": {"type":"point","id":"A4","rotation":"0,1","index":"4"}
       },
       {
         "geometry": {
@@ -1183,7 +1218,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"A5","rotation":"0,1"}
+        "properties": {"type":"point","id":"A5","rotation":"0,1","index":"5"}
       },
       {
         "geometry": {
@@ -1194,7 +1229,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"A6","rotation":"0,1"}
+        "properties": {"type":"point","id":"A6","rotation":"0,1","index":"6"}
       },
       {
         "geometry": {
@@ -1205,7 +1240,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"A7","rotation":"0,1"}
+        "properties": {"type":"point","id":"A7","rotation":"0,1","index":"7"}
       },
       {
         "geometry": {
@@ -1216,7 +1251,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"A8","rotation":"0,1"}
+        "properties": {"type":"point","id":"A8","rotation":"0,1","index":"8"}
       },
       {
         "geometry": {
@@ -1227,7 +1262,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"A9","inct":"B3","rotation":"0,1"}
+        "properties": {"type":"point","id":"A9","inct":"B3","rotation":"0,1","index":"9"}
       },
       {
         "geometry": {
@@ -1238,7 +1273,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"A10","rotation":"0,1"}
+        "properties": {"type":"point","id":"A10","rotation":"0,1","index":"10"}
       },
       {
         "geometry": {
@@ -1249,7 +1284,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"A11","inct":"C1","rotation":"0,1"}
+        "properties": {"type":"point","id":"A11","inct":"C1","rotation":"0,1","index":"11"}
       },
       {
         "geometry": {
@@ -1260,7 +1295,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"B1","rotation":"1,0"}
+        "properties": {"type":"point","id":"B1","rotation":"1,0","index":"12"}
       },
       {
         "geometry": {
@@ -1271,7 +1306,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"B2","rotation":"1,0"}
+        "properties": {"type":"point","id":"B2","rotation":"1,0","index":"13"}
       },
       {
         "geometry": {
@@ -1282,7 +1317,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"B3","inct":"A9","rotation":"1,0"}
+        "properties": {"type":"point","id":"B3","inct":"A9","rotation":"1,0","index":"14"}
       },
       {
         "geometry": {
@@ -1293,7 +1328,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C1","inct":"A11","rotation":"1,0"}
+        "properties": {"type":"point","id":"C1","inct":"A11","rotation":"1,0","index":"15"}
       },
       {
         "geometry": {
@@ -1304,7 +1339,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C2","rotation":"1,0"}
+        "properties": {"type":"point","id":"C2","rotation":"1,0","index":"16"}
       },
       {
         "geometry": {
@@ -1315,7 +1350,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C3","rotation":"1,0"}
+        "properties": {"type":"point","id":"C3","rotation":"1,0","index":"17"}
       },
       {
         "geometry": {
@@ -1326,7 +1361,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C4","rotation":"1,0"}
+        "properties": {"type":"point","id":"C4","rotation":"1,0","index":"18"}
       },
       {
         "geometry": {
@@ -1337,7 +1372,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C5","rotation":"1,0"}
+        "properties": {"type":"point","id":"C5","rotation":"1,0","index":"19"}
       },
       {
         "geometry": {
@@ -1348,7 +1383,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C6","rotation":"1,0"}
+        "properties": {"type":"point","id":"C6","rotation":"1,0","index":"20"}
       },
       {
         "geometry": {
@@ -1359,7 +1394,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C7","rotation":"1,0"}
+        "properties": {"type":"point","id":"C7","rotation":"1,0","index":"21"}
       },
       {
         "geometry": {
@@ -1370,7 +1405,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C8","rotation":"1,0"}
+        "properties": {"type":"point","id":"C8","rotation":"1,0","index":"22"}
       },
       {
         "geometry": {
@@ -1381,7 +1416,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C9","rotation":"1,0"}
+        "properties": {"type":"point","id":"C9","rotation":"1,0","index":"23"}
       },
       {
         "geometry": {
@@ -1392,7 +1427,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C10","rotation":"1,0"}
+        "properties": {"type":"point","id":"C10","rotation":"1,0","index":"24"}
       },
       {
         "geometry": {
@@ -1403,7 +1438,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C11","rotation":"1,0"}
+        "properties": {"type":"point","id":"C11","rotation":"1,0","index":"25"}
       },
       {
         "geometry": {
@@ -1414,7 +1449,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C12","rotation":"1,0"}
+        "properties": {"type":"point","id":"C12","rotation":"1,0","index":"26"}
       },
       {
         "geometry": {
@@ -1425,7 +1460,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C13","rotation":"1,0"}
+        "properties": {"type":"point","id":"C13","rotation":"1,0","index":"27"}
       },
       {
         "geometry": {
@@ -1436,7 +1471,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C14","rotation":"1,0"}
+        "properties": {"type":"point","id":"C14","rotation":"1,0","index":"28"}
       },
       {
         "geometry": {
@@ -1447,7 +1482,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C15","inct":"D5","rotation":"1,0"}
+        "properties": {"type":"point","id":"C15","inct":"D5","rotation":"1,0","index":"29"}
       },
       {
         "geometry": {
@@ -1458,7 +1493,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C16","rotation":"1,0"}
+        "properties": {"type":"point","id":"C16","rotation":"1,0","index":"30"}
       },
       {
         "geometry": {
@@ -1469,7 +1504,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C17","rotation":"1,0"}
+        "properties": {"type":"point","id":"C17","rotation":"1,0","index":"31"}
       },
       {
         "geometry": {
@@ -1480,7 +1515,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C18","rotation":"1,0"}
+        "properties": {"type":"point","id":"C18","rotation":"1,0","index":"32"}
       },
       {
         "geometry": {
@@ -1491,7 +1526,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C19","rotation":"1,0"}
+        "properties": {"type":"point","id":"C19","rotation":"1,0","index":"33"}
       },
       {
         "geometry": {
@@ -1502,7 +1537,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C20","rotation":"1,0"}
+        "properties": {"type":"point","id":"C20","rotation":"1,0","index":"34"}
       },
       {
         "geometry": {
@@ -1513,7 +1548,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C21","rotation":"1,0"}
+        "properties": {"type":"point","id":"C21","rotation":"1,0","index":"35"}
       },
       {
         "geometry": {
@@ -1524,7 +1559,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C22","rotation":"1,0"}
+        "properties": {"type":"point","id":"C22","rotation":"1,0","index":"36"}
       },
       {
         "geometry": {
@@ -1535,7 +1570,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C23","rotation":"1,0"}
+        "properties": {"type":"point","id":"C23","rotation":"1,0","index":"37"}
       },
       {
         "geometry": {
@@ -1546,7 +1581,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C24","rotation":"1,0"}
+        "properties": {"type":"point","id":"C24","rotation":"1,0","index":"38"}
       },
       {
         "geometry": {
@@ -1557,7 +1592,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C25","rotation":"1,0"}
+        "properties": {"type":"point","id":"C25","rotation":"1,0","index":"39"}
       },
       {
         "geometry": {
@@ -1568,7 +1603,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C26","rotation":"1,0"}
+        "properties": {"type":"point","id":"C26","rotation":"1,0","index":"40"}
       },
       {
         "geometry": {
@@ -1579,7 +1614,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C27","inct":"G7","rotation":"1,0"}
+        "properties": {"type":"point","id":"C27","inct":"G7","rotation":"1,0","index":"41"}
       },
       {
         "geometry": {
@@ -1590,7 +1625,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C28","rotation":"1,0"}
+        "properties": {"type":"point","id":"C28","rotation":"1,0","index":"42"}
       },
       {
         "geometry": {
@@ -1601,7 +1636,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C29","rotation":"1,0"}
+        "properties": {"type":"point","id":"C29","rotation":"1,0","index":"43"}
       },
       {
         "geometry": {
@@ -1612,7 +1647,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C30","rotation":"1,0"}
+        "properties": {"type":"point","id":"C30","rotation":"1,0","index":"44"}
       },
       {
         "geometry": {
@@ -1623,7 +1658,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C31","rotation":"1,0"}
+        "properties": {"type":"point","id":"C31","rotation":"1,0","index":"45"}
       },
       {
         "geometry": {
@@ -1634,7 +1669,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C32","rotation":"1,0"}
+        "properties": {"type":"point","id":"C32","rotation":"1,0","index":"46"}
       },
       {
         "geometry": {
@@ -1645,7 +1680,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C33","rotation":"1,0"}
+        "properties": {"type":"point","id":"C33","rotation":"1,0","index":"47"}
       },
       {
         "geometry": {
@@ -1656,7 +1691,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C34","rotation":"1,0"}
+        "properties": {"type":"point","id":"C34","rotation":"1,0","index":"48"}
       },
       {
         "geometry": {
@@ -1667,7 +1702,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C35","rotation":"1,0"}
+        "properties": {"type":"point","id":"C35","rotation":"1,0","index":"49"}
       },
       {
         "geometry": {
@@ -1678,7 +1713,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C36","rotation":"1,0"}
+        "properties": {"type":"point","id":"C36","rotation":"1,0","index":"50"}
       },
       {
         "geometry": {
@@ -1689,7 +1724,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C37","rotation":"1,0"}
+        "properties": {"type":"point","id":"C37","rotation":"1,0","index":"51"}
       },
       {
         "geometry": {
@@ -1700,7 +1735,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C38","rotation":"1,0"}
+        "properties": {"type":"point","id":"C38","rotation":"1,0","index":"52"}
       },
       {
         "geometry": {
@@ -1711,7 +1746,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C39","inct":"H1","rotation":"1,0"}
+        "properties": {"type":"point","id":"C39","inct":"H1","rotation":"1,0","index":"53"}
       },
       {
         "geometry": {
@@ -1722,7 +1757,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"D1","inct":"E1","rotation":"0,1"}
+        "properties": {"type":"point","id":"D1","inct":"E1","rotation":"0,1","index":"54"}
       },
       {
         "geometry": {
@@ -1733,7 +1768,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"D2","rotation":"0,1"}
+        "properties": {"type":"point","id":"D2","rotation":"0,1","index":"55"}
       },
       {
         "geometry": {
@@ -1744,7 +1779,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"D3","rotation":"0,1"}
+        "properties": {"type":"point","id":"D3","rotation":"0,1","index":"56"}
       },
       {
         "geometry": {
@@ -1755,7 +1790,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"D4","rotation":"0,1"}
+        "properties": {"type":"point","id":"D4","rotation":"0,1","index":"57"}
       },
       {
         "geometry": {
@@ -1766,7 +1801,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"D5","inct":"C15","rotation":"0,1"}
+        "properties": {"type":"point","id":"D5","inct":"C15","rotation":"0,1","index":"58"}
       },
       {
         "geometry": {
@@ -1777,7 +1812,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"E1","inct":"D1","rotation":"1,0"}
+        "properties": {"type":"point","id":"E1","inct":"D1","rotation":"1,0","index":"59"}
       },
       {
         "geometry": {
@@ -1788,7 +1823,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"E2","rotation":"1,0"}
+        "properties": {"type":"point","id":"E2","rotation":"1,0","index":"60"}
       },
       {
         "geometry": {
@@ -1799,7 +1834,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"E3","rotation":"1,0"}
+        "properties": {"type":"point","id":"E3","rotation":"1,0","index":"61"}
       },
       {
         "geometry": {
@@ -1810,7 +1845,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"E4","rotation":"1,0"}
+        "properties": {"type":"point","id":"E4","rotation":"1,0","index":"62"}
       },
       {
         "geometry": {
@@ -1821,7 +1856,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"E5","rotation":"1,0"}
+        "properties": {"type":"point","id":"E5","rotation":"1,0","index":"63"}
       },
       {
         "geometry": {
@@ -1832,7 +1867,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"E6","rotation":"1,0"}
+        "properties": {"type":"point","id":"E6","rotation":"1,0","index":"64"}
       },
       {
         "geometry": {
@@ -1843,7 +1878,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"E7","rotation":"1,0"}
+        "properties": {"type":"point","id":"E7","rotation":"1,0","index":"65"}
       },
       {
         "geometry": {
@@ -1854,7 +1889,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"F1","rotation":"1,0"}
+        "properties": {"type":"point","id":"F1","rotation":"1,0","index":"66"}
       },
       {
         "geometry": {
@@ -1865,7 +1900,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"F2","rotation":"1,0"}
+        "properties": {"type":"point","id":"F2","rotation":"1,0","index":"67"}
       },
       {
         "geometry": {
@@ -1876,7 +1911,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"F3","rotation":"1,0"}
+        "properties": {"type":"point","id":"F3","rotation":"1,0","index":"68"}
       },
       {
         "geometry": {
@@ -1887,7 +1922,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"F4","rotation":"1,0"}
+        "properties": {"type":"point","id":"F4","rotation":"1,0","index":"69"}
       },
       {
         "geometry": {
@@ -1898,7 +1933,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"F5","rotation":"1,0"}
+        "properties": {"type":"point","id":"F5","rotation":"1,0","index":"70"}
       },
       {
         "geometry": {
@@ -1909,7 +1944,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"F6","rotation":"1,0"}
+        "properties": {"type":"point","id":"F6","rotation":"1,0","index":"71"}
       },
       {
         "geometry": {
@@ -1920,7 +1955,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"F7","rotation":"1,0"}
+        "properties": {"type":"point","id":"F7","rotation":"1,0","index":"72"}
       },
       {
         "geometry": {
@@ -1931,7 +1966,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"F8","rotation":"1,0"}
+        "properties": {"type":"point","id":"F8","rotation":"1,0","index":"73"}
       },
       {
         "geometry": {
@@ -1942,7 +1977,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"F9","rotation":"1,0"}
+        "properties": {"type":"point","id":"F9","rotation":"1,0","index":"74"}
       },
       {
         "geometry": {
@@ -1953,7 +1988,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"F10","rotation":"1,0"}
+        "properties": {"type":"point","id":"F10","rotation":"1,0","index":"75"}
       },
       {
         "geometry": {
@@ -1964,7 +1999,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"F11","inct":"G1","rotation":"1,0"}
+        "properties": {"type":"point","id":"F11","inct":"G1","rotation":"1,0","index":"76"}
       },
       {
         "geometry": {
@@ -1975,7 +2010,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"G1","inct":"F11","rotation":"0,1"}
+        "properties": {"type":"point","id":"G1","inct":"F11","rotation":"0,1","index":"77"}
       },
       {
         "geometry": {
@@ -1986,7 +2021,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"G2","rotation":"0,1"}
+        "properties": {"type":"point","id":"G2","rotation":"0,1","index":"78"}
       },
       {
         "geometry": {
@@ -1997,7 +2032,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"G3","rotation":"0,1"}
+        "properties": {"type":"point","id":"G3","rotation":"0,1","index":"79"}
       },
       {
         "geometry": {
@@ -2008,7 +2043,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"G4","rotation":"0,1"}
+        "properties": {"type":"point","id":"G4","rotation":"0,1","index":"80"}
       },
       {
         "geometry": {
@@ -2019,7 +2054,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"G5","rotation":"0,1"}
+        "properties": {"type":"point","id":"G5","rotation":"0,1","index":"81"}
       },
       {
         "geometry": {
@@ -2030,7 +2065,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"G6","rotation":"0,1"}
+        "properties": {"type":"point","id":"G6","rotation":"0,1","index":"82"}
       },
       {
         "geometry": {
@@ -2041,7 +2076,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"G7","inct":"C27","rotation":"0,1"}
+        "properties": {"type":"point","id":"G7","inct":"C27","rotation":"0,1","index":"83"}
       },
       {
         "geometry": {
@@ -2052,7 +2087,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"H1","inct":"C39","rotation":"0,1"}
+        "properties": {"type":"point","id":"H1","inct":"C39","rotation":"0,1","index":"84"}
       },
       {
         "geometry": {
@@ -2063,7 +2098,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"H2","rotation":"0,1"}
+        "properties": {"type":"point","id":"H2","rotation":"0,1","index":"85"}
       },
       {
         "geometry": {
@@ -2074,7 +2109,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"H3","rotation":"0,1"}
+        "properties": {"type":"point","id":"H3","rotation":"0,1","index":"86"}
       },
       {
         "geometry": {
@@ -2085,7 +2120,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"H4","rotation":"0,1"}
+        "properties": {"type":"point","id":"H4","rotation":"0,1","index":"87"}
       },
       {
         "geometry": {
@@ -2096,7 +2131,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"H5","rotation":"0,1"}
+        "properties": {"type":"point","id":"H5","rotation":"0,1","index":"88"}
       },
       {
         "geometry": {
@@ -2107,7 +2142,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"H6","rotation":"0,1"}
+        "properties": {"type":"point","id":"H6","rotation":"0,1","index":"89"}
       },
       {
         "geometry": {
@@ -2118,7 +2153,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"H7","rotation":"0,1"}
+        "properties": {"type":"point","id":"H7","rotation":"0,1","index":"90"}
       },
       {
         "geometry": {
@@ -2129,7 +2164,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"I1","rotation":"1,0"}
+        "properties": {"type":"point","id":"I1","rotation":"1,0","index":"91"}
       },
       {
         "geometry": {
@@ -2140,7 +2175,7 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"I2","rotation":"1,0"}
+        "properties": {"type":"point","id":"I2","rotation":"1,0","index":"92"}
       }
 		]
 }
