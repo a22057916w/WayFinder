@@ -175,6 +175,7 @@ class Poster():
         self.type = None
         self.id = None                        # Type of String
         self.vertex_id = None
+        self.rotation = None
 
 
         self.coordinates = None         # Type of list of String
@@ -199,6 +200,7 @@ class Poster():
         self.type = self.properties["type"]
         self.id = self.properties["id"]
         self.vertex_id = self.properties["vertex_id"]
+        self.rotation = self.properties["rotation"]
 
 
     def getType(self):
@@ -215,3 +217,5 @@ class Poster():
         return self.feature
     def getVertexID(self):
         return self.vertex_id
+    def getRotation(self):
+        return self.rotation
