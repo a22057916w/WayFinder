@@ -120,7 +120,7 @@ def parseSave(totDist, totElev, floorVertex, floorNext, floorRouteCoord, floorRo
     floorNumber = len(totDist)  # len(totDist) gets floor counts
 
     # parse and save each floor as a file for dist and next
-    for i in range(0, floorNumber):
+    """for i in range(0, floorNumber):
         fileDist = "C:/Users/A02wxy/Documents/GitHub/WayFinder/Direction/Route/dist/sf" + str(i + 1) + "f_dist"
         dist = []       # for saving dist to each floor from floor[i]
         # parsing the dist data
@@ -164,7 +164,7 @@ def parseSave(totDist, totElev, floorVertex, floorNext, floorRouteCoord, floorRo
                 "coordinate": vertex.getCoordinate(),
                 "rotation": vertex.getRotation()
             })
-        save(vertexes, fileName)
+        save(vertexes, fileName)"""
 
     # store each floor's poster
     for i in range(0, floorNumber):
@@ -175,7 +175,7 @@ def parseSave(totDist, totElev, floorVertex, floorNext, floorRouteCoord, floorRo
                 "ID": poster.getID(),
                 "coordinate": poster.getCoordinate(),
                 "vertex_id": poster.getVertexID(),
-                "rotation" poster.getRotation()
+                "rotation": poster.getRotation()
             })
         save(posters, fileName)
 
