@@ -130,6 +130,37 @@
         "properties": {"type":"corridor", "id":"4", "name":"走廊D"}
       },
       {
+        "geometry": {
+          "coordinates": [
+            [
+              [
+                121.43168806778641,
+                25.03557195777762
+              ],
+              [
+                121.43168934839201,
+                25.03555377402273
+              ],
+              [
+                121.43160782927367,
+                25.035548782974118
+              ],
+              [
+                121.43160694607542,
+                25.03556757206772
+              ],
+              [
+                121.43168806778641,
+                25.03557195777762
+              ]
+            ]
+          ],
+          "type": "Polygon"
+        },
+        "type": "Feature",
+        "properties": {"type":"corridor", "id":"5", "name":"走廊E"}
+      },
+      {
         "_comment":"sf648",
         "geometry": {
           "coordinates": [
@@ -421,8 +452,8 @@
         "_comment":"海報C",
         "geometry": {
           "coordinates": [
-            121.43157010168807,
-			25.035208572204226
+            121.43162719415187,
+			25.035242955613313
           ],
           "type": "Point"
         },
@@ -432,7 +463,8 @@
                         "door":"121.43162719415187,25.035242955613313",
                         "vertex":"121.43161029087872,25.035241373157305",
                         "vertex_id":"b18",
-						"floor":"6"}
+						"rotation":"'1,0'"
+						}
       },
       {
         "_comment":"右下電梯",
@@ -467,8 +499,8 @@
         "properties": {"type":"elevator", "id":"1", "name":"電梯A",
                         "multi_door":"0",
                         "door":"121.43157010168807,25.035208572204226",
-                        "vertex":"121.43161214444365,25.03521068735928",
-                        "vertex_id":"b20"}
+                        "vertex":"121.43165833526655,25.03556116061145",
+                        "vertex_id":"e2"}
       },
 	  {
         "_comment":"海報A",
@@ -485,7 +517,8 @@
                         "door":"121.43157010168807,25.035208572204226",
                         "vertex":"121.43161214444365,25.03521068735928",
                         "vertex_id":"b20",
-						"floor":"6"}
+						"rotation":"'-1,0'"
+						}
       },
       {
         "_comment":"右下女廁",
@@ -1429,25 +1462,25 @@
           "coordinates": [
             [
               [
-                121.43168832157733,
-                25.03557253254492
-              ],
-              [
-                121.4316906188817,
-                25.03553491919439
-              ],
-              [
-                121.43160925833968,
-                25.035530340229556
-              ],
-              [
-                121.43160690447348,
-                25.035567778219814
-              ],
-              [
-                121.43168832157733,
-                25.03557253254492
-              ]
+				        121.43168947023383,
+				        25.03555372583213
+			        ],
+      			  [
+        				121.4316906188817,
+      				  25.03553491919439
+      			  ],
+      			  [
+        				121.43160925833968,
+        				25.035530340229556
+      			  ],
+      			  [
+        				121.43160808140868,
+        				25.03554905920511
+      			  ],
+      			  [
+        				121.43168947023383,
+        				25.03555372583213
+      			  ]
             ]
           ],
           "type": "Polygon"
@@ -1455,16 +1488,16 @@
         "type": "Feature",
         "properties": {"type": "elevator","id": "2","name": "電梯B",
                         "multi_door":"0",
-                        "door":"121.4316290833346,25.035558986494564",
-                        "vertex":"121.43162798496775,25.035585258231578",
-                        "vertex_id":"a37"}
+                        "door":"121.43165892495307,25.03555206373433",
+                        "vertex":"121.43164295416165,25.035560325940764",
+                        "vertex_id":"e3"}
       },
 	  {
         "_comment":"海報B",
         "geometry": {
           "coordinates": [
-            121.4316290833346,
-			25.035558986494564
+            121.43161814270923,
+            25.03554943689555
           ],
           "type": "Point"
         },
@@ -1472,9 +1505,10 @@
         "properties": {"type": "poster","id": "2","name": "海報B",
                         "multi_door":"0",
                         "door":"121.4316290833346,25.035558986494564",
-                        "vertex":"121.43162798496775,25.035585258231578",
-                        "vertex_id":"a37",
-						"floor":"6"}
+                        "vertex":"121.43161752881394,25.03555853364442",
+                        "vertex_id":"e5",
+						"rotation":"'0,-1'"
+						}
       },
       {
         "_comment": "左邊女廁",
@@ -2460,7 +2494,8 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point", "id":"a34", "rotation":"0,1", "index":"33"}
+        "properties": {"type":"point", "id":"a34",
+                        "inct":"f1", "rotation":"0,1", "index":"33"}
       },
       {
         "geometry": {
@@ -2471,7 +2506,8 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point", "id":"a35", "rotation":"0,1", "index":"34"}
+        "properties": {"type":"point", "id":"a35",
+                        "inct":"g1", "rotation":"0,1", "index":"34"}
       },
       {
         "geometry": {
@@ -2482,7 +2518,8 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point", "id":"a36", "rotation":"0,1", "index":"35"}
+        "properties": {"type":"point", "id":"a36",
+                        "inct":"h1", "rotation":"0,1", "index":"35"}
       },
       {
         "geometry": {
@@ -2505,7 +2542,8 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point", "id":"a38", "rotation":"0,1", "index":"37"}
+        "properties": {"type":"point", "id":"a38",
+                        "inct":"i1", "rotation":"0,1", "index":"37"}
       },
       {
         "geometry": {
@@ -3127,6 +3165,174 @@
         "type": "Feature",
         "properties": {"type":"point", "id":"d4",
                         "inct":"c1", "rotation":"0,1", "index":"93"}
+      },
+      {
+        "geometry": {
+          "coordinates": [
+            121.43167423374916,
+            25.035562175631654
+          ],
+          "type": "Point"
+        },
+        "type": "Feature",
+        "properties": {"type":"point", "id":"e1",
+                        "inct":"f2", "rotation":"0,1", "index":"94"}
+      },
+      {
+        "geometry": {
+          "coordinates": [
+            121.43165833526655,
+            25.03556116061145
+          ],
+          "type": "Point"
+        },
+        "type": "Feature",
+        "properties": {"type":"point", "id":"e2",
+                        "inct":"g2", "rotation":"0,1", "index":"95"}
+      },
+      {
+        "geometry": {
+          "coordinates": [
+            121.43164295416165,
+            25.035560325940764
+          ],
+          "type": "Point"
+        },
+        "type": "Feature",
+        "properties": {"type":"point", "id":"e3",
+                        "inct":"h2", "rotation":"0,1", "index":"96"}
+      },
+      {
+        "geometry": {
+          "coordinates": [
+            121.43162926547336,
+            25.03555958310993
+          ],
+          "type": "Point"
+        },
+        "type": "Feature",
+        "properties": {"type":"point", "id":"e4",
+                        "inct":"c22", "rotation":"0,1", "index":"97"}
+      },
+      {
+        "geometry": {
+          "coordinates": [
+            121.43161752881394,
+            25.03555853364442
+          ],
+          "type": "Point"
+        },
+        "type": "Feature",
+        "properties": {"type":"point", "id":"e5",
+                        "inct":"i2", "rotation":"0,1", "index":"98"}
+      },
+      {
+        "geometry": {
+          "coordinates": [
+            121.4316725982523,
+            25.035587681097766
+          ],
+          "type": "Point"
+        },
+        "type": "Feature",
+        "properties": {"type":"point", "id":"f1",
+                        "inct":"a34", "rotation":"1,0", "index":"99"}
+      },
+      {
+        "geometry": {
+          "coordinates": [
+            121.43165628022422,
+            25.035586995445016
+          ],
+          "type": "Point"
+        },
+        "type": "Feature",
+        "properties": {"type":"point", "id":"g1",
+                        "inct":"a35", "rotation":"1,0", "index":"100"}
+      },
+      {
+        "geometry": {
+          "coordinates": [
+            121.43164142683003,
+            25.035586035120986
+          ],
+          "type": "Point"
+        },
+        "type": "Feature",
+        "properties": {"type":"point", "id":"h1",
+                        "inct":"a36", "rotation":"1,0", "index":"101"}
+      },
+      {
+        "geometry": {
+          "coordinates": [
+            121.43161667526658,
+            25.0355846186161
+          ],
+          "type": "Point"
+        },
+        "type": "Feature",
+        "properties": {"type":"point", "id":"i1",
+                        "inct":"a38", "rotation":"1,0", "index":"102"}
+      },
+      {
+        "geometry": {
+          "coordinates": [
+            121.43162798496775,
+            25.035585258231578
+          ],
+          "type": "Point"
+        },
+        "type": "Feature",
+        "properties": {"type":"point", "id":"c22",
+                        "inct":"e4", "rotation":"1,0", "index":"103"}
+      },
+      {
+        "geometry": {
+          "coordinates": [
+            121.43167423374916,
+            25.035562175631654
+          ],
+          "type": "Point"
+        },
+        "type": "Feature",
+        "properties": {"type":"point", "id":"f2",
+                        "inct":"e1", "rotation":"1,0", "index":"103"}
+      },
+      {
+        "geometry": {
+          "coordinates": [
+            121.43165833526655,
+            25.03556116061145
+          ],
+          "type": "Point"
+        },
+        "type": "Feature",
+        "properties": {"type":"point", "id":"g2",
+                        "inct":"e2", "rotation":"1,0", "index":"104"}
+      },
+      {
+        "geometry": {
+          "coordinates": [
+            121.43164295416165,
+            25.035560325940764
+          ],
+          "type": "Point"
+        },
+        "type": "Feature",
+        "properties": {"type":"point", "id":"h2",
+                        "inct":"e3", "rotation":"1,0", "index":"105"}
+      },
+      {
+        "geometry": {
+          "coordinates": [
+            121.43161752881394,
+            25.03555853364442
+          ],
+          "type": "Point"
+        },
+        "type": "Feature",
+        "properties": {"type":"point", "id":"i2",
+                        "inct":"e5", "rotation":"1,0", "index":"106"}
       }
     ]
 }
