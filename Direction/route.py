@@ -175,7 +175,7 @@ def parseSave(totDist, totElev, floorVertex, floorNext, floorRouteCoord, floorRo
                 "ID": poster.getID(),
                 "coordinate": poster.getCoordinate(),
                 "vertex_id": poster.getVertexID(),
-                "rotation" poster.getRotation()
+                "rotation": poster.getRotation()
             })
         save(posters, fileName)
 
