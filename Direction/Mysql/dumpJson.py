@@ -12,7 +12,7 @@ def MYSQL_DUMP_JSON():
     mydb = mysql.connector.connect(
       host="140.136.150.100",
       user="root",
-      database="WayFinder"
+      database="v2_WayFinder"
     )
     mycursor = mydb.cursor()
 

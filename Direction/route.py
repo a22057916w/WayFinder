@@ -101,7 +101,6 @@ def getDistanceAndElevator(collection, targetCollection, s, e):
     for elevator in elevators:
         VID = elevator.getVertexID()[0]
         spe = dist[s][EVID[VID]]
-        EID = elevator.getID()
         # find the same elevator on different floor
         for targetElevator in targetElevators:
             if targetElevator.getName() == elevator.getName():
