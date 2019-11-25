@@ -45,6 +45,8 @@ def Floyd_Warshall(weight):
 # 印出由s點到t點的最短路徑
 def find_path(s, t, next):
     middle = []
+    middle.append(s)    # 把自己加到路徑中
+
     i = s
     while i != t:
         i = next[i][t]
