@@ -528,8 +528,8 @@
       "properties": {"type":"elevator","id":"1","name":"電梯A",
 					"multi_door": "0",
 					"door": "121.4315721509127,25.03520392858057",
-					"vertex":"121.43158279704204,25.035204415869643",
-					"vertex_id":"S3"}
+					"vertex":"121.4315721509127,25.03520392858057",
+					"vertex_id":"V3"}
       }
       ,
 	  {
@@ -669,8 +669,8 @@
       "properties": {"type":"elevator","id":"2","name":"電梯B",
 					"multi_door": "0",
 					"door": "121.43162464339986,25.035550422554167",
-					"vertex":"121.43162338917824,25.035559556077075",
-					"vertex_id":"J4"}
+					"vertex":"121.43162464339986,25.035550422554167",
+					"vertex_id":"Q3"}
       },
       {
       "_comment":"屋頂",
@@ -2343,6 +2343,17 @@
         "properties": {"type":"point","id":"Q2",
                         "inct":"J4", "rotation":"1,0","index":"106"}
       },
+      {
+        "geometry": {
+          "coordinates": [
+            121.43162464339986,
+			25.035550422554167
+          ],
+          "type": "Point"
+        },
+        "type": "Feature",
+        "properties": {"type":"point","id":"Q3", "rotation":"1,0","index":"106"}
+      },
 	  {
         "geometry": {
           "coordinates": [
@@ -2486,6 +2497,17 @@
         "type": "Feature",
         "properties": {"type":"point", "id":"V2",
                         "inct":"S3", "rotation":"0,1", "index":"127"}
+      },
+      {
+        "geometry": {
+          "coordinates": [
+            121.4315721509127,
+			25.03520392858057
+          ],
+          "type": "Point"
+        },
+        "type": "Feature",
+        "properties": {"type":"point", "id":"V3", "rotation":"0,1", "index":"127"}
       },
       {
         "geometry": {

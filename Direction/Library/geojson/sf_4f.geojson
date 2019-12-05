@@ -465,8 +465,8 @@
         "properties": {"type":"elevator", "id":"1", "name":"電梯A",
 						"multi_door":"0",
 						"door":"121.43157043981819,25.035207078257983",
-						"vertex":"121.43158253183282,25.035207793350693",
-						"vertex_id":"J3"
+						"vertex":"121.43157043981819,25.035207078257983",
+						"vertex_id":"L3"
 		}
       },
 	  {
@@ -1482,8 +1482,8 @@
         "properties": {"type": "elevator","id": "2","name": "電梯B",
 						"multi_door":"0",
 						"door":"121.43162992462652,25.035550030082447",
-						"vertex":"121.43162926547336,25.03555958310993",
-						"vertex_id":"E3"
+						"vertex":"121.43162992462652,25.035550030082447",
+						"vertex_id":"C45"
 		}
       },
 	  {
@@ -2639,7 +2639,8 @@
             "type": "Point"
           },
           "type": "Feature",
-          "properties": {"type":"point", "id":"B5", "rotation":"1,0", "index":"59"}
+          "properties": {"type":"point", "id":"B5", 
+							"inct":"E5","rotation":"1,0", "index":"59"}
   	  },
   	  {
   		"geometry": {
@@ -4013,6 +4014,17 @@
 	  },
 	  {
 		"geometry": {
+		  "coordinates": [
+			121.43162992462652,
+			25.035550030082447
+		  ],
+		  "type": "Point"
+		},
+		"type": "Feature",
+		"properties": {"type":"point", "id":"C45", "rotation":"1,0", "index":"199"}
+	  },
+	  {
+		"geometry": {
           "coordinates": [
             121.43167263616539,
 			25.03584380645742
@@ -4146,6 +4158,18 @@
 		  "type": "Feature",
 		  "properties": {"type":"point", "id":"E4",
 						  "inct":"I2", "rotation":"0,1", "index":"195"}
+		},
+		{
+			"geometry": {
+				"coordinates": [
+				  121.431589934913,
+				  25.035556410179552
+				],
+				"type": "Point"
+			  },
+			  "type": "Feature",
+			  "properties": {"type":"point", "id":"E5", 
+								"inct":"B5","rotation":"1,0", "index":"59"}
 		},
 		{
 		  "geometry": {
@@ -4326,6 +4350,17 @@
         "type": "Feature",
         "properties": {"type":"point", "id":"L2",
 						"inct":"J3","rotation":"0,1", "index":"117"}
+      },
+      {
+        "geometry": {
+          "coordinates": [
+            121.43157043981819,
+			25.035207078257983
+          ],
+          "type": "Point"
+        },
+        "type": "Feature",
+        "properties": {"type":"point", "id":"L3","rotation":"0,1", "index":"117"}
       },
       {
         "geometry": {

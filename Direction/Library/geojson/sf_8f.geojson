@@ -290,8 +290,8 @@
         "properties": {"type":"elevator", "id":"1", "name":"電梯A",
 						"multi_door": "0",
 						"door": "121.4315713886964,25.035207793853814",
-						"vertex":"121.43158245492538,25.035208709454423",
-						"vertex_id":"K3"}
+						"vertex":"121.4315713886964,25.035207793853814",
+						"vertex_id":"N3"}
       },
 	  {
         "_comment":"海報A",
@@ -1580,8 +1580,8 @@
         "properties": {"type":"elevator", "id":"2", "name":"電梯B",
 						"multi_door": "0",
 						"door": "121.43162732560825,25.035550422554167",
-						"vertex":"121.43162604357292,25.035560004463477",
-						"vertex_id":"E3"}
+						"vertex":"121.43162732560825,25.035550422554167",
+						"vertex_id":"A27"}
       },
 	  {
         "_comment":"海報B",
@@ -2150,6 +2150,17 @@
       {
         "geometry": {
           "coordinates": [
+            121.43162732560825,
+			25.035550422554167
+          ],
+          "type": "Point"
+        },
+        "type": "Feature",
+        "properties": {"type":"point", "id":"A27", "rotation":"1,0", "index":"122"}
+      },
+      {
+        "geometry": {
+          "coordinates": [
             121.43201787652384,
             25.035606910347894
           ],
@@ -2552,7 +2563,8 @@
           "type": "Point"
         },
         "type": "Feature",
-        "properties": {"type":"point","id":"C3","rotation":"1,0","index":"68"}
+        "properties": {"type":"point","id":"C3",
+						"inct":"E5", "rotation":"1,0","index":"68"}
       },
       {
         "geometry": {
@@ -3078,6 +3090,18 @@
       {
         "geometry": {
           "coordinates": [
+            121.43158907362397,
+            25.035555283502973
+          ],
+          "type": "Point"
+        },
+        "type": "Feature",
+        "properties": {"type":"point","id":"E5",
+						"inct":"C3", "rotation":"0,1","index":"68"}
+      },
+      {
+        "geometry": {
+          "coordinates": [
             121.43165422959254,
             25.03558686303552
           ],
@@ -3278,6 +3302,17 @@
         "type": "Feature",
         "properties": {"type":"point", "id":"N2",
                         "inct":"K3", "rotation":"0,1", "index":"127"}
+      },
+      {
+        "geometry": {
+          "coordinates": [
+            121.4315713886964,
+			25.035207793853814
+          ],
+          "type": "Point"
+        },
+        "type": "Feature",
+        "properties": {"type":"point", "id":"N3", "rotation":"0,1", "index":"127"}
       },
       {
         "geometry": {
