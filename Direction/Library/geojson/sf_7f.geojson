@@ -365,7 +365,7 @@
           "type": "Polygon"
         },
         "type": "Feature",
-        "properties": {"type":"women_toilet", "id":"1", "name":"女廁A","multi_door": "0","door": "121.43160162106454,25.035105206892467","vertex":"121.43161893702933,25.0351028719614","vertex_id":"C42"}
+        "properties": {"type":"women_toilet", "id":"sf7wtA", "name":"女廁A","multi_door": "0","door": "121.43160162106454,25.035105206892467","vertex":"121.43161893702933,25.0351028719614","vertex_id":"C42"}
       },
       {
         "_comment":"男廁A",
@@ -397,7 +397,7 @@
           "type": "Polygon"
         },
         "type": "Feature",
-        "properties": {"type":"men_toilet", "id":"1", "name":"男廁A","multi_door": "0","door": "121.43160296422593,25.035085863729464","vertex":"121.43161969380748,25.03509197339929","vertex_id":"C43"}
+        "properties": {"type":"men_toilet", "id":"sf7mtA", "name":"男廁A","multi_door": "0","door": "121.43160296422593,25.035085863729464","vertex":"121.43161969380748,25.03509197339929","vertex_id":"C43"}
       },
       {
         "_comment":"女廁B",
@@ -429,7 +429,7 @@
           "type": "Polygon"
         },
         "type": "Feature",
-        "properties": {"type":"women_toilet", "id":"2", "name":"女廁B","multi_door": "0","door": "121.43198632242195,25.035622543534743","vertex":"121.431987912566,25.035605158672226","vertex_id":"B4"}
+        "properties": {"type":"women_toilet", "id":"sf7wtB", "name":"女廁B","multi_door": "0","door": "121.43198632242195,25.035622543534743","vertex":"121.431987912566,25.035605158672226","vertex_id":"B4"}
       },
       {
         "_comment":"男廁B",
@@ -461,7 +461,7 @@
           "type": "Polygon"
         },
         "type": "Feature",
-        "properties": {"type":"men_toilet", "id":"2", "name":"男廁B","multi_door": "0","door": "121.43199995058615,25.035622973206685","vertex":"121.43199735213193,25.03560571050747","vertex_id":"B3"}
+        "properties": {"type":"men_toilet", "id":"sf7mtB", "name":"男廁B","multi_door": "0","door": "121.43199995058615,25.035622973206685","vertex":"121.43199735213193,25.03560571050747","vertex_id":"B3"}
       },
       {
         "_comment": "女廁C",
@@ -493,7 +493,7 @@
           "type": "Polygon"
         },
         "type": "Feature",
-        "properties": {"type":"women_toilet", "id":"3", "name":"女廁C","multi_door": "0","door": "121.43167256778702,25.03584382677785","vertex":"121.43166991016375,25.03584475243227","vertex_id":"D1"}
+        "properties": {"type":"women_toilet", "id":"sf7wtC", "name":"女廁C","multi_door": "0","door": "121.43167256778702,25.03584382677785","vertex":"121.43166991016375,25.03584475243227","vertex_id":"D1"}
       },
       {
         "_comment": "男廁C",
@@ -525,7 +525,7 @@
           "type": "Polygon"
         },
         "type": "Feature",
-        "properties": {"type":"men_toilet", "id":"3", "name":"男廁C","multi_door": "0","door": "121.43167256778702,25.03584382677785","vertex":"121.43166991016375,25.03584475243227","vertex_id":"D1"}
+        "properties": {"type":"men_toilet", "id":"sf7mtC", "name":"男廁C","multi_door": "0","door": "121.43167256778702,25.03584382677785","vertex":"121.43166991016375,25.03584475243227","vertex_id":"D1"}
       },
       {
         "_comment":"樓梯B",

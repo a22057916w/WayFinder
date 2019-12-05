@@ -521,7 +521,7 @@
           "type": "Polygon"
         },
         "type": "Feature",
-        "properties": {"type":"women_toilet", "id":"1", "name":"女廁A",
+        "properties": {"type":"women_toilet", "id":"sf6wtA", "name":"女廁A",
                         "multi_door":"0",
                         "door":"121.4316015586856,25.035102760994874",
                         "vertex":"121.4316187787174,25.035103930262878",
@@ -557,7 +557,7 @@
           "type": "Polygon"
         },
         "type": "Feature",
-        "properties": {"type":"men_toilet", "id":"1", "name":"男廁A",
+        "properties": {"type":"men_toilet", "id":"sf6mtA", "name":"男廁A",
                         "multi_door":"0",
                         "door":"121.43160295470636,25.035089086614434",
                         "vertex":"121.43161973774471,25.035090159160248",
@@ -629,7 +629,7 @@
           "type": "Polygon"
         },
         "type": "Feature",
-        "properties": {"type":"men_toilet", "id":"2", "name":"男廁B",
+        "properties": {"type":"men_toilet", "id":"sf6mtB", "name":"男廁B",
                         "multi_door":"0",
                         "door":"121.43199775198332,25.035622898822936",
                         "vertex":"121.43199895965853,25.035606295385364",
@@ -665,7 +665,7 @@
           "type": "Polygon"
         },
         "type": "Feature",
-        "properties": {"type":"women_toilet", "id":"2", "name":"女廁B",
+        "properties": {"type":"women_toilet", "id":"sf6wtB", "name":"女廁B",
                         "multi_door":"0",
                         "door":"121.43198795581054,25.035622427445617",
                         "vertex":"121.43198892121899,25.03560572315864",
@@ -1512,7 +1512,7 @@
           "type": "Polygon"
         },
         "type": "Feature",
-        "properties": {"type":"women_toilet", "id":"3", "name":"女廁C",
+        "properties": {"type":"women_toilet", "id":"sf6wtC", "name":"女廁C",
                         "multi_door":"0",
                         "door":"121.4316728244363,25.03583909634078",
                         "vertex":"121.43166768865274,25.03584283317221",
@@ -1548,7 +1548,7 @@
           "type": "Polygon"
         },
         "type": "Feature",
-        "properties": {"type":"men_toilet", "id":"3", "name":"男廁C",
+        "properties": {"type":"men_toilet", "id":"sf6mtC", "name":"男廁C",
                         "multi_door":"0",
                         "door":"121.43167248759988,25.035843947142126",
                         "vertex":"121.43166768865274,25.03584283317221",

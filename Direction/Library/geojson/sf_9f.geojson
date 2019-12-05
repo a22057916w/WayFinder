@@ -600,7 +600,7 @@
         "type": "Polygon"
       },
       "type": "Feature",
-      "properties": {"type":"men_toilet","id":"1","name":"男廁A","multi_door": "0","door":"121.43159649416583,25.035106654548542","vertex":"121.43159813156797,25.03510090713239","vertex_id":"H2"}
+      "properties": {"type":"men_toilet","id":"sf9mtA","name":"男廁A","multi_door": "0","door":"121.43159649416583,25.035106654548542","vertex":"121.43159813156797,25.03510090713239","vertex_id":"H2"}
       }
       ,
       {
@@ -633,7 +633,7 @@
         "type": "Polygon"
       },
       "type": "Feature",
-      "properties": {"type":"women_toilet","id":"1","name":"女廁A","multi_door": "0","door": "121.43156773688821,25.03510515506268","vertex":"121.43156886350351,25.035099002331734","vertex_id":"H5"}
+      "properties": {"type":"women_toilet","id":"sf9wtA","name":"女廁A","multi_door": "0","door": "121.43156773688821,25.03510515506268","vertex":"121.43156886350351,25.035099002331734","vertex_id":"H5"}
       }
       ,
       {

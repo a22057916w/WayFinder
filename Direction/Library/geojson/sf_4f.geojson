@@ -518,7 +518,7 @@
           "type": "Polygon"
         },
         "type": "Feature",
-        "properties": {"type":"women_toilet", "id":"1", "name":"女廁A",
+        "properties": {"type":"women_toilet", "id":"sf4wtA", "name":"女廁A",
 						"multi_door":"0",
 						"door":"121.43160179653592,25.03510325281725",
 						"vertex":"121.43161910794373,25.035104401129487",
@@ -555,7 +555,7 @@
           "type": "Polygon"
         },
         "type": "Feature",
-        "properties": {"type":"men_toilet", "id":"1", "name":"男廁A",
+        "properties": {"type":"men_toilet", "id":"sf4mtA", "name":"男廁A",
 						"multi_door":"0",
 						"door":"121.43160275830297,25.03508854465703",
 						"vertex":"121.43161986559136,25.0350896233941",
@@ -665,7 +665,7 @@
           "type": "Polygon"
         },
         "type": "Feature",
-        "properties": {"type":"men_toilet", "id":"2", "name":"男廁B",
+        "properties": {"type":"men_toilet", "id":"sf4mtB", "name":"男廁B",
 						"multi_door":"0",
 						"door":"121.43199539427582,25.0356225909849",
 						"vertex":"121.43199643025736,25.035606243674252",
@@ -702,7 +702,7 @@
           "type": "Polygon"
         },
         "type": "Feature",
-        "properties": {"type":"women_toilet", "id":"2", "name":"女廁B",
+        "properties": {"type":"women_toilet", "id":"sf4wtB", "name":"女廁B",
 						"multi_door":"0",
 						"door":"121.43198944163032,25.03562222691552",
 						"vertex":"121.43199057812484,25.035605832282556",
@@ -1535,7 +1535,7 @@
           "type": "Polygon"
         },
         "type": "Feature",
-        "properties": {"type":"women_toilet", "id":"3", "name":"女廁C",
+        "properties": {"type":"women_toilet", "id":"sf4wtC", "name":"女廁C",
 						"multi_door":"0",
 						"door":"121.4316724876943,25.0358442605133",
 						"vertex":"121.43167263616539,25.03584380645742",
@@ -1572,7 +1572,7 @@
           "type": "Polygon"
         },
         "type": "Feature",
-        "properties": {"type":"men_toilet", "id":"3", "name":"男廁C",
+        "properties": {"type":"men_toilet", "id":"sf4mtC", "name":"男廁C",
 						"multi_door":"0",
 						"door":"121.43167240124654,25.03584897081329",
 						"vertex":"121.43167263616539,25.03584380645742",
