@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--
+        <Button
+            android:id="@+id/sixth_level_button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="6"
+            android:textColor="@color/mapboxWhite"/>
+
+
+        <Button
+            android:id="@+id/ground_level_button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="G"
+            android:textColor="@color/mapboxWhite"/>
+            -->
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        mapbox:mapbox_cameraTargetLat="25.035476832850165"
+        mapbox:mapbox_cameraTargetLng="121.43173051882297"
+        mapbox:mapbox_cameraZoom="18" />
+
+    <ImageButton
+        android:id="@+id/search_room_buttons"
+        android:background="@drawable/btn_circle_background"
+        android:src="@drawable/ic_action_search_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:elevation="16dp"
+        android:layout_gravity="top|end"
+        android:layout_margin="8dp"/>
+
+    <ImageButton
+        android:id="@+id/floor_level_buttons"
+        android:background="@drawable/btn_circle_background"
+        android:src="@drawable/ic_action_level_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:elevation="16dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="8dp"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/level_layout"
+        android:layout_width="177dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="14dp"
+        android:background="@drawable/btn_circle_background"
+        android:visibility="invisible"
+        android:layout_gravity="bottom|end">
+
+        <TextView
+            android:id="@+id/adjustment"
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:background="@color/mapboxBlue"
+            android:elevation="14dp"
+            android:text="調整位置用"
+            android:visibility="invisible"/>
+
+        <HorizontalScrollView
+            android:id="@+id/level_scroll_view"
+            android:background="@drawable/btn_circle_background"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/adjustment"
+            android:scrollbarSize="0dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_circle_background"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/ground_floor_button"
+                    android:background="@drawable/btn_circle_background"
+                    android:src="@drawable/ic_action_ground_level_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="8dp"
+                    />
+                <ImageButton
+                    android:id="@+id/second_floor_button"
+                    android:background="@drawable/btn_circle_background"
+                    android:src="@drawable/ic_action_second_level_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="8dp"
+                    />
+                <ImageButton
+                    android:id="@+id/third_floor_button"
+                    android:background="@drawable/btn_circle_background"
+                    android:src="@drawable/ic_action_third_level_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="8dp"
+                    />
+                <ImageButton
+                    android:id="@+id/fourth_floor_button"
+                    android:background="@drawable/btn_circle_background"
+                    android:src="@drawable/ic_action_fourth_level_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="8dp"
+                    />
+                <ImageButton
+                    android:id="@+id/fifth_floor_button"
+                    android:background="@drawable/btn_circle_background"
+                    android:src="@drawable/ic_action_fifth_level_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="8dp"
+                    />
+                <ImageButton
+                    android:id="@+id/sixth_floor_button"
+                    android:background="@drawable/btn_circle_background"
+                    android:src="@drawable/ic_action_sixth_level_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="8dp"
+                    />
+                <ImageButton
+                    android:id="@+id/seventh_floor_button"
+                    android:background="@drawable/btn_circle_background"
+                    android:src="@drawable/ic_action_seventh_level_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="8dp"
+                    />
+                <ImageButton
+                    android:id="@+id/eighth_floor_button"
+                    android:background="@drawable/btn_circle_background"
+                    android:src="@drawable/ic_action_eighth_level_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="8dp"
+                    />
+                <ImageButton
+                    android:id="@+id/ninth_floor_button"
+                    android:background="@drawable/btn_circle_background"
+                    android:src="@drawable/ic_action_ninth_level_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="8dp"
+                    />
+                <ImageButton
+                    android:id="@+id/hide_floor_button"
+                    android:background="@drawable/btn_circle_background"
+                    android:layout_width="26dp"
+                    android:layout_height="40dp"
+                    android:padding="8dp"
+                    android:visibility="invisible"
+                    />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
