@@ -308,11 +308,16 @@ public final class SearchHelper {
     }
 
     public static boolean checkTargetName(String target) {
-        String pattern = "sf\\d\\d\\d[a-zA-Z]?";         // sf635A or sf647 ...
+        String pattern1 = "sf\\d\\d\\d[a-zA-Z]?";         // sf635A or sf647 ...
+        String pattern2 = "[男女]廁";                  // 男廁或女廁
 
-        Pattern r = Pattern.compile(pattern);
-        Matcher m = r.matcher(target);
-        return m.find();
+        Pattern r1 = Pattern.compile(pattern1);
+        Matcher m1 = r1.matcher(target);
+
+        Pattern r2 = Pattern.compile(pattern2);
+        Matcher m2 = r2.matcher(target);
+
+        return m1.find() || m2.find() || target.equals("廁所");
     }
 }
 
