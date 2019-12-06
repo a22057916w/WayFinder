@@ -290,7 +290,7 @@ public class ArImageAndNavigation extends AppCompatActivity implements Scene.OnU
                     poster = SearchHelper.parsePoster(SearchHelper.posterQuery(startingImage, query));
                     dest = SearchHelper.parseDest(SearchHelper.destQuery(query));*/
 
-                    vertices = SearchHelper.parseCoordinateAndRotation(SearchHelper.path_test_v2Query(startingImage, query));
+                    vertices = SearchHelper.parseCoordinateAndRotation(SearchHelper.pathQuery(startingImage, query));
                     poster = SearchHelper.parsePoster(SearchHelper.posterQuery(startingImage, query));
                     dest = SearchHelper.parseDest(SearchHelper.destQuery_test(startingImage, query));
 
