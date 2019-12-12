@@ -351,41 +351,41 @@ public class ArImageAndNavigation extends AppCompatActivity implements Scene.OnU
     private ArrayList<Pose> createPose() {
         ArrayList<Pose> PostList = new ArrayList<>();
 
-        // initiate the starting vector
-        // v0 is for right and left, v1 is for up and down, and v2 is for back and forth
-        float v0 = startingImage.getCenterPose().tx();
-        float v1 = startingImage.getCenterPose().ty() - 1.5f;
-        float v2 = startingImage.getCenterPose().tz() + greatCircle(vertices.get(0).getLat(), vertices.get(0).getLng(), poster.getLat(), poster.getLng());
-
-        // do calibration of the coordinate system
-        Pair calCoord = calibration(v0, v2);
-        v0 = (float) calCoord.first;
-        v2 = (float) calCoord.second;
-
-        // the first vector is always the direction opposite to the poster
-        Pair<String, String> initDirec = new Pair<>("v2", "+");
-
-        // record the direction and distance
-        String previous_vector = initDirec.first;
-        String previous_move = initDirec.second;
-
-        // record current direction and next direction
-        Pair<Integer, Integer> currDir, nextDir;
-
         // dist and direction should have the same size
         if(dist.size() == direction.size()) {
+            // initiate the starting vector
+            // v0 is for right and left, v1 is for up and down, and v2 is for back and forth
+            float v0 = startingImage.getCenterPose().tx();
+            float v1 = startingImage.getCenterPose().ty() - 1.5f;
+            float v2 = startingImage.getCenterPose().tz() + dist.get(1);
+            //float v2 = startingImage.getCenterPose().tz() + greatCircle(vertices.get(0).getLat(), vertices.get(0).getLng(), poster.getLat(), poster.getLng());
+
+            // do calibration of the coordinate system
+            Pair calCoord = calibration(v0, v2);
+            v0 = (float) calCoord.first;
+            v2 = (float) calCoord.second;
+
+            // the first vector is always the direction opposite to the poster
+            Pair<String, String> initDirec = new Pair<>("v2", "+");
 
             // place the first point and determine its direction
-            currDir = direction.get(0);
             PostList.add(0, Pose.makeTranslation(v0, v1, v2).compose(Pose.makeRotation((float)cos(0 / 2), 0, (float)sin(0 / 2), 0)));
 
+            // record the direction and distance
+            String previous_vector = initDirec.first;
+            String previous_move = initDirec.second;
+
+            // record current direction and next direction
+            Pair<Integer, Integer> currDir, nextDir;
+
+            currDir = direction.get(0);
             for(int i = 1; i < dist.size(); i++) {
                 nextDir = direction.get(i);
 
                 // place the second point which is depend on the relative position
                 // between the second vertex on the path and the poster
                 if(i == 1) {
-                    Pair<String, String> secondDirec = setDirection(poster, vertices.get(0), vertices.get(1));
+                    Pair<String, String> secondDirec = setDirection(poster, vertices.get(1), vertices.get(2));
 
                     assert secondDirec != null;
                     previous_vector = secondDirec.first;
@@ -507,6 +507,7 @@ public class ArImageAndNavigation extends AppCompatActivity implements Scene.OnU
 
         return new Pair<>(x, y);
     }
+
 
     private Pair<String, String> setDirection(Poster poster, Vertex vt0, Vertex vt1) {
         double dlat = vt1.getLat() - vt0.getLat();
