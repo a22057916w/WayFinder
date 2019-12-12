@@ -357,7 +357,7 @@ public class ArImageAndNavigation extends AppCompatActivity implements Scene.OnU
             // v0 is for right and left, v1 is for up and down, and v2 is for back and forth
             float v0 = startingImage.getCenterPose().tx();
             float v1 = startingImage.getCenterPose().ty() - 1.5f;
-            float v2 = startingImage.getCenterPose().tz() + dist.get(1);
+            float v2 = startingImage.getCenterPose().tz() + dist.get(0);
             //float v2 = startingImage.getCenterPose().tz() + greatCircle(vertices.get(0).getLat(), vertices.get(0).getLng(), poster.getLat(), poster.getLng());
 
             // do calibration of the coordinate system
@@ -385,7 +385,7 @@ public class ArImageAndNavigation extends AppCompatActivity implements Scene.OnU
                 // place the second point which is depend on the relative position
                 // between the second vertex on the path and the poster
                 if(i == 1) {
-                    Pair<String, String> secondDirec = setDirection(poster, vertices.get(1), vertices.get(2));
+                    Pair<String, String> secondDirec = setDirection(poster, vertices.get(0), vertices.get(1));
 
                     assert secondDirec != null;
                     previous_vector = secondDirec.first;

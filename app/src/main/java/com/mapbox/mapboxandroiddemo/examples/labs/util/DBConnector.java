@@ -79,7 +79,7 @@ public class DBConnector {
     static String pathQuery(String floor, String id, String room) {
         String result = "";
         try {
-            URL url = new URL("http://140.136.150.100/test/path_v3.php");
+            URL url = new URL("http://140.136.150.100/test/path_v5.php");
 
             //連線到 url網址
             HttpClient httpclient = new DefaultHttpClient();
