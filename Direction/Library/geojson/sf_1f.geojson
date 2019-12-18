@@ -431,8 +431,8 @@
         "properties": {"type": "poster","id": "4","name": "海報D",
                         "multi_door":"0",
                         "door":"121.43160465021651,25.03588022511188",
-                        "vertex":"121.43160758676555,25.03583937888243",
-                        "vertex_id":"c1",
+                        "vertex":"121.43160639204842,25.035860472576346",
+                        "vertex_id":"c0",
 						"floor":"1",
 						"rotation":"'0,1'"
 						}
@@ -1969,6 +1969,17 @@
         },
         "type": "Feature",
         "properties": {"type":"point", "id":"b31", "rotation":"1,0", "index":"68"}
+      },
+      {
+        "geometry": {
+          "coordinates": [
+            121.43160639204842,
+			25.035860472576346
+          ],
+          "type": "Point"
+        },
+        "type": "Feature",
+        "properties": {"type":"point", "id":"c0", "rotation":"1,0", "index":"69"}
       },
       {
         "geometry": {
