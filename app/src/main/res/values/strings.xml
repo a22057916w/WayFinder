@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">WayFinder</string>
+    <string name="tap_instructions">tap</string>
+    <string name="search_hint">Enter a location</string>
+    <string name="search_menu">search_menu</string>
+    <string name="action_favorite">action_favorite</string>
+    <string name="fit_image_to_scan">Fit image to scan</string>
+    <string name="mapbox_token">pk.eyJ1IjoiYTIyMDU3OTE2dyIsImEiOiJjanU5NXBmYzIyY2xjNDNydnI0eGVjNzlyIn0.BgtwJ1ueDyOTTfAA6AuyMA</string>
+</resources>

@@ -1,0 +1,87 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.mapbox.mapboxandroiddemo.examples.labs"
+        minSdkVersion 24
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    // add library
+    useLibrary 'org.apache.http.legacy'
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    // add library
+    implementation 'org.apache.httpcomponents:httpclient-android:4.3.5.1'
+
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-sdk:8.1.0'
+    implementation 'com.mapbox.mapboxsdk:mapbox-sdk-turf:4.8.0'
+
+    implementation 'com.github.mancj:MaterialSearchBar:0.8.2'
+
+    // Provides ArFragment, and other Sceneform UX resources:
+    implementation "com.google.ar.sceneform.ux:sceneform-ux:1.12.0"
+
+    // for the use of SnackbarHelper
+    implementation 'com.android.support:design:28.0.0'
+}
+
+apply plugin: 'com.google.ar.sceneform.plugin'
+
+sceneform.asset('sampledata/models/andy.obj',
+        'default',
+        'sampledata/models/andy.sfa',
+        'src/main/res/raw/andy')
+
+sceneform.asset('sampledata/foot.obj',
+        'default',
+        'sampledata/foot.sfa',
+        'src/main/assets/foot')
+
+sceneform.asset('sampledata/models/frame_lower_left.obj',
+        'default',
+        'sampledata/models/frame_lower_left.sfa',
+        'src/main/assets/models/frame_lower_left')
+
+sceneform.asset('sampledata/models/frame_lower_right.obj',
+        'default',
+        'sampledata/models/frame_lower_right.sfa',
+        'src/main/assets/models/frame_lower_right')
+
+sceneform.asset('sampledata/models/frame_upper_left.obj',
+        'default',
+        'sampledata/models/frame_upper_left.sfa',
+        'src/main/assets/models/frame_upper_left')
+
+sceneform.asset('sampledata/models/frame_upper_right.obj',
+        'default',
+        'sampledata/models/frame_upper_right.sfa',
+        'src/main/assets/models/frame_upper_right')
+
+
+
+sceneform.asset('sampledata/Gold_Star_v3.obj',
+        'default',
+        'sampledata/Gold_Star_v3.sfa',
+        'src/main/assets/Gold_Star_v3')

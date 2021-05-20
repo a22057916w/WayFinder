@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mapbox.mapboxandroiddemo.examples.labs">
+    <!--
+ This tag indicates that this application requires ARCore. This results in the application
+        only being visible in the Google Play Store on devices that support ARCore.
+    -->
+    <uses-feature
+        android:name="android.hardware.camera.ar"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:allowBackup="true"
+        android:exported="true"
+        android:icon="@drawable/wayfinder_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/wayfinder_logo"
+        android:screenOrientation="locked"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <!--
+         This tag indicates that this application requires ARCore. This results in the
+            application only being visible in the Google Play Store on devices that support
+            ARCore.
+        -->
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <!-- enable the search dialog to send searches to SearchableActivity -->
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value="com.mapbox.mapboxandroiddemo.examples.labs.ar.ArImageAndNavigation" />
+        </activity>
+        <activity
+            android:name=".ar.ArImageAndNavigation">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="required" />
+
+        <uses-library
+            android:name="com.google.android.wearable"
+            android:required="false" />
+    </application>
+
+</manifest>
