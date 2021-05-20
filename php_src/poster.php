@@ -29,17 +29,17 @@ $poster_coordinateANDrotation_sql ="SELECT coordinate, rotation
 									WHERE id = '$number'";
 	$result = mysqli_query($conn, $poster_coordinateANDrotation_sql);
 	if($result)
-	{	
+	{
 		while($row = mysqli_fetch_array($result))
 		{
 			$poster_coordinateANDrotation[] = $row;
 		};
 		$newkey = "poster_coordinate";
-		$oldkey = "coordinate";		
+		$oldkey = "coordinate";
 		$poster_coordinateANDrotation[0][$newkey] = $poster_coordinateANDrotation[0][$oldkey];
 		unset($poster_coordinateANDrotation[0][$oldkey]);
 		$newkey1 = "poster_rotation";
-		$oldkey1 = "rotation";		
+		$oldkey1 = "rotation";
 		$poster_coordinateANDrotation[0][$newkey1] = $poster_coordinateANDrotation[0][$oldkey1];
 		unset($poster_coordinateANDrotation[0][$oldkey1]);
 		print(json_encode($poster_coordinateANDrotation,JSON_UNESCAPED_UNICODE));
