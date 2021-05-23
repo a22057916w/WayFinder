@@ -4,5 +4,6 @@ WayFinder is an indoor navigation application that indicates the user the direct
 <br>
 
 * [mapbox](https://docs.mapbox.com/android/maps/examples/) - indoor map
+* [ARCore](https://developers.google.com/ar/develop/java/augmented-images) - AR axis, motion tracking, and footprint indicator
 
 <br>
