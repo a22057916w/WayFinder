@@ -3,6 +3,6 @@ WayFinder is an indoor navigation application that indicates the user the direct
 
 <br>
 
-*[mapbox](https://docs.mapbox.com/android/maps/examples/) - indoor map
+* [mapbox](https://docs.mapbox.com/android/maps/examples/) - indoor map
 
 <br>
