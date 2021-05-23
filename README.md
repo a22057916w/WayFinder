@@ -8,4 +8,4 @@ WayFinder is an indoor navigation application that indicates the user the direct
 
 <br>
 
-![123](https://media.giphy.com/media/QIYYFqXnWTfvCDK2f0/giphy.gif)
+![123](https://github.com/a22057916w/WayFinder/blob/master/.meta/demo1.gif)
