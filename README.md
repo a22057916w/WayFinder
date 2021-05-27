@@ -9,5 +9,7 @@ WayFinder is an indoor navigation application that indicates the user the direct
 <br>
 
 <p align="center">
-![](https://github.com/a22057916w/WayFinder/blob/master/.meta/demo1.gif)![](https://github.com/a22057916w/WayFinder/blob/master/.meta/demo2.gif)![](https://github.com/a22057916w/WayFinder/blob/master/.meta/demo3.gif)
+<img src="/.meta/demo1.gif">
+<img src="/.meta/demo2.gif">
+<img src="/.meta/demo3.gif">
 </p>
