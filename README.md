@@ -13,8 +13,9 @@ WayFinder is an indoor navigation application that indicates the user the direct
 <img src="/.meta/demo1.gif" width="30%" height="30%">&nbsp;&nbsp;
 <img src="/.meta/demo2.gif" width="30%" height="30%">&nbsp;&nbsp;
 <img src="/.meta/demo3.gif" width="30%" height="30%"><br><br>
-Choosing the destination on the main page and finding the specific picture as a starting point, then beginning the navigation. Afterward, The route will be calculated out and displayed as a series of AR footprints. Finally, following the footprints to the destination.
 </p>
+
+Choosing the destination on the main page and finding the specific picture as a starting point, then beginning the navigation. Afterward, The route will be calculated out and displayed as a series of AR footprints. Finally, following the footprints to the destination.
 
 ## Issue
 * The route or the AR footprint would be affected by environmental light source
