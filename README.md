@@ -16,5 +16,5 @@ WayFinder is an indoor navigation application that indicates the user the direct
 </p>
 
 ## Issue
-* The light would affect the AR-projection
+* The route or the AR footprint would be affected by environmental light source
 * The bluprint does not exactly match the really building
