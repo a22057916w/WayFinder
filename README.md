@@ -10,8 +10,8 @@ WayFinder is an indoor navigation application that indicates the user the direct
 
 ## Demo
 <p align="center">
-<img src="/.meta/demo1.gif" width="30%" height="30%">&nbsp;
-<img src="/.meta/demo2.gif" width="30%" height="30%">&nbsp;
+<img src="/.meta/demo1.gif" width="30%" height="30%">&nbsp;&nbsp;
+<img src="/.meta/demo2.gif" width="30%" height="30%">&nbsp;&nbsp;
 <img src="/.meta/demo3.gif" width="30%" height="30%">
 </p>
 
