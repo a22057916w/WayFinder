@@ -17,3 +17,7 @@ Following the footprint<br><br>
 <img src="/.meta/demo3.gif"><br>
 Destination reached<br><br>
 </p>
+
+## Issue
+* The light would affect the AR-projection
+* The bluprint does not exactly match the really building
