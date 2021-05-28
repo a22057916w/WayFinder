@@ -19,4 +19,4 @@ Choosing the destination on the main page and finding the specific picture as a 
 
 ## Issue
 * The route or the AR footprint would be affected by environmental light source
-* The bluprint does not exactly match the really building
+* The bluprint does not exactly match the real building
