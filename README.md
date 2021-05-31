@@ -20,3 +20,6 @@ Choosing the destination on the main page and finding the specific picture as a 
 ## Issue
 * The route or the AR footprint would be affected by environmental light source
 * The bluprint does not exactly match the real building
+
+## License
+Available under [MIT License](https://github.com/a22057916w/WayFinder/blob/master/LICENSE)
