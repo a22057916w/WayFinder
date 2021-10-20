@@ -23,7 +23,3 @@ Choosing the destination on the main page and finding the specific picture as a 
 
 ## License
 Available under [MIT License](https://github.com/a22057916w/WayFinder/blob/master/LICENSE)
-
-```
-arcoreimg.exe build-db --input_image_list_path=/path/to/poster-imglist.txt --output_db_path=../poster.imgdb
-```
